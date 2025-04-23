@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.highcourt.operationofhighcourtbarassociation.Treasurer.Reconcllebank">
+   <children>
+      <Button layoutX="37.0" layoutY="39.0" mnemonicParsing="false" onAction="#exitonaction" text="exit" />
+      <TableView fx:id="tableviewtextfield" layoutX="154.0" layoutY="200.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="statementidclomn" prefWidth="75.0" text="statementid" />
+          <TableColumn fx:id="banknameclomn" prefWidth="75.0" text="bankname" />
+            <TableColumn fx:id="balanceclomn" prefWidth="75.0" text="balance" />
+            <TableColumn fx:id="dateclomn" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.highcourt.operationofhighcourtbarassociation.Register.Accessdigitalrecords">
+   <children>
+      <Button layoutX="42.0" layoutY="31.0" mnemonicParsing="false" onAction="#exitonaction" text="exit" />
+      <TableView fx:id="tableviewtextfield" layoutX="100.0" layoutY="186.0" prefHeight="200.0" prefWidth="222.0">
+        <columns>
+          <TableColumn fx:id="idcloumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="descriptioncloumn" prefWidth="75.0" text="description" />
+            <TableColumn fx:id="dateclomn" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

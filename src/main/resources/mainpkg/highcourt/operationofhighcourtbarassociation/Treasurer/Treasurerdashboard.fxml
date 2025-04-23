@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.highcourt.operationofhighcourtbarassociation.Treasurer.Treasurerdashboard">
+   <children>
+      <Label layoutX="90.0" layoutY="169.0" prefHeight="18.0" prefWidth="119.0" text=" Treasurer Dashboard" />
+      <Button layoutX="261.0" layoutY="125.0" mnemonicParsing="false" onAction="#allocatebudgetonaction" text="Allocatebudget" />
+      <Button layoutX="261.0" layoutY="175.0" mnemonicParsing="false" onAction="#generalfincialreportsonaction" text="Generatefincialreports" />
+      <Button layoutX="274.0" layoutY="229.0" mnemonicParsing="false" onAction="#handlefundsonaction" text="Handlefunds" />
+      <Button layoutX="261.0" layoutY="281.0" mnemonicParsing="false" onAction="#manageinvestmentsonaction" text="Manageinvestments" />
+      <Button layoutX="453.0" layoutY="125.0" mnemonicParsing="false" onAction="#managepayrollonaction" text="Managepayroll" />
+      <Button layoutX="461.0" layoutY="187.0" mnemonicParsing="false" onAction="#monitorduesonaction" text="Monitordues" />
+      <Button layoutX="461.0" layoutY="248.0" mnemonicParsing="false" onAction="#processmembershiponaction" text="Processmembership" />
+      <Button layoutX="461.0" layoutY="294.0" mnemonicParsing="false" onAction="#reconilebankonaction" text="Reconcllebank" />
+      <Button layoutX="366.0" layoutY="344.0" mnemonicParsing="false" onAction="#signoutonaction" text="Signout" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.highcourt.operationofhighcourtbarassociation.Register.Registerdasboard">
+   <children>
+      <Button layoutX="288.0" layoutY="150.0" mnemonicParsing="false" onAction="#updatecasestatusonaction" prefHeight="26.0" prefWidth="88.0" text="Update Case" />
+      <Button layoutX="288.0" layoutY="197.0" mnemonicParsing="false" onAction="#managemembersonaction" text="Manage Members" />
+      <Label layoutX="67.0" layoutY="179.0" text="Registrar Dashboard" />
+      <Button layoutX="282.0" layoutY="251.0" mnemonicParsing="false" onAction="#acessdigitalrecordsonaction" text="Access Digitalrecord" />
+      <Button layoutX="501.0" layoutY="80.0" mnemonicParsing="false" onAction="#generalreportsonaction" text="GenerateReports" />
+      <Button layoutX="506.0" layoutY="150.0" mnemonicParsing="false" onAction="#reviewlicenseonaction" text="Review License" />
+      <Button layoutX="499.0" layoutY="197.0" mnemonicParsing="false" onAction="#trackattendanceonaction" text="Track Attendance" />
+      <Button layoutX="499.0" layoutY="251.0" mnemonicParsing="false" onAction="#courtscheduleonaction" text="Court Schedule" />
+      <Button layoutX="415.0" layoutY="329.0" mnemonicParsing="false" onAction="#signoutonaction" text="Signout" />
+      <Button layoutX="288.0" layoutY="93.0" mnemonicParsing="false" onAction="#registeradvocateonaction" text="Register Advocate" />
+   </children>
+</AnchorPane>

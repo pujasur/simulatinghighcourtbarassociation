@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="545.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.highcourt.operationofhighcourtbarassociation.Treasurer.Monitordues">
+   <children>
+      <Button layoutX="33.0" layoutY="40.0" mnemonicParsing="false" onAction="#exitonaction" text="exit" />
+      <TextField fx:id="noticeidtextfield" layoutX="14.0" layoutY="84.0" promptText="noticeid" />
+      <TextField fx:id="dueamountextfield" layoutX="11.0" layoutY="175.0" promptText="dueamount" />
+      <TextField fx:id="statustextfield" layoutX="16.0" layoutY="260.0" promptText="status" />
+      <TableView fx:id="tableviewtextfield" layoutX="116.0" layoutY="345.0" prefHeight="200.0" prefWidth="371.0">
+        <columns>
+          <TableColumn fx:id="noticeidclomn" prefWidth="75.0" text="noticeid" />
+            <TableColumn fx:id="dueamountclomn" prefWidth="75.0" text="dueamount" />
+            <TableColumn fx:id="statusclomn" prefWidth="75.0" text="status" />
+            <TableColumn fx:id="duedateclomn" prefWidth="75.0" text="duedate" />
+          <TableColumn fx:id="memberidcloumn" prefWidth="75.0" text="memberid" />
+        </columns>
+      </TableView>
+      <Button layoutX="383.0" layoutY="175.0" mnemonicParsing="false" onAction="#monitoronaction" text="Monitor" />
+      <ComboBox fx:id="memberidtextfield" layoutX="16.0" layoutY="128.0" prefWidth="150.0" promptText="memberid" />
+      <DatePicker fx:id="duedatetextfield" layoutX="3.0" layoutY="218.0" promptText="duedate" />
+   </children>
+</AnchorPane>

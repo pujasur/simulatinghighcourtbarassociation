@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="539.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.highcourt.operationofhighcourtbarassociation.Treasurer.Generatefincialreports">
+   <children>
+      <TextField fx:id="idtextfield" layoutX="34.0" layoutY="257.0" promptText="id" />
+      <TextField fx:id="typetextfield" layoutX="15.0" layoutY="110.0" promptText="type" />
+      <TextField fx:id="periodtextfield" layoutX="15.0" layoutY="164.0" promptText="period" />
+      <DatePicker fx:id="dbtextfield" layoutX="16.0" layoutY="219.0" promptText="generaldate" />
+      <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitonaction" text="exit" />
+      <TableView fx:id="tableviewtextfield" layoutX="89.0" layoutY="325.0" prefHeight="200.0" prefWidth="293.0">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="typeclomn" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="periodclomn" prefWidth="75.0" text="period" />
+            <TableColumn fx:id="datecloum" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+      <Button layoutX="403.0" layoutY="177.0" mnemonicParsing="false" onAction="#generateonaction" text="generate" />
+   </children>
+</AnchorPane>
