@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="850" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group67.oop.CSE213_FinalProject_Group67_HighcourtBarAssociation.TrackCaseStatusViewController">
+
+    <!-- Title -->
+    <Label layoutX="310" layoutY="20" text="Track Case Status">
+        <font>
+            <Font name="Arial Bold" size="24" />
+        </font>
+    </Label>
+
+    <!-- My Cases Table -->
+    <Label layoutX="50" layoutY="70" text="Your Cases:" />
+    <TableView fx:id="caseTableView" layoutX="50" layoutY="100" onMouseClicked="#caseTableClicked" prefHeight="200" prefWidth="750">
+        <columns>
+            <TableColumn fx:id="caseIdColumn" prefWidth="100" text="Case ID" />
+            <TableColumn fx:id="advocateNameColumn" prefWidth="200" text="Advocate Name" />
+            <TableColumn fx:id="caseTypeColumn" prefWidth="150" text="Case Type" />
+            <TableColumn fx:id="caseStatusColumn" prefWidth="150" text="Current Status" />
+        </columns>
+    </TableView>
+
+    <!-- Detailed View -->
+    <Label layoutX="50" layoutY="320" text="Case Details:" />
+    <TextArea fx:id="caseDetailsArea" editable="false" layoutX="50" layoutY="350" prefHeight="120" prefWidth="750" wrapText="true" />
+
+    <!-- Return Home and Logout Buttons -->
+    <Button fx:id="returnHomeButton" layoutX="616.0" layoutY="21.0" onAction="#returnHomeOnAction" prefHeight="31.0" prefWidth="116.0" text="Return Home" />
+    <Button fx:id="logoutButton" layoutX="739.0" layoutY="21.0" onAction="#logoutOnAction" prefHeight="31.0" prefWidth="84.0" text="Log Out" />
+
+</AnchorPane>

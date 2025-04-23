@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group67.oop.CSE213_FinalProject_Group67_HighcourtBarAssociation.ManageMultipleClientsAndPrioritizeTasksViewController">
+
+    <!-- Title -->
+    <Label layoutX="20.0" layoutY="20.0" style="-fx-font-size: 20px;" text="Client &amp; Case Prioritization" />
+
+    <!-- Dashboard / Client Overview Button -->
+    <Button fx:id="clientOverviewButton" layoutX="20.0" layoutY="60.0" onAction="#clientOverviewOnAction" text="Client Overview" />
+
+    <!-- Client and Case Table -->
+    <TableView fx:id="clientCaseTable" layoutX="20.0" layoutY="110.0" prefHeight="250.0" prefWidth="860.0">
+        <columns>
+            <TableColumn prefWidth="150.0" text="Client Name" />
+            <TableColumn prefWidth="100.0" text="Case ID" />
+            <TableColumn prefWidth="250.0" text="Case Title" />
+            <TableColumn prefWidth="150.0" text="Deadline" />
+            <TableColumn prefWidth="100.0" text="Priority" />
+        </columns>
+    </TableView>
+
+    <!-- Filter Options -->
+    <Label layoutX="20.0" layoutY="380.0" text="Sort/Filter Cases By:" />
+    <ChoiceBox fx:id="filterChoiceBox" layoutX="160.0" layoutY="375.0" prefWidth="200.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Deadline" />
+                <String fx:value="Client Name" />
+                <String fx:value="Importance" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <!-- Priority / Reminder Setting -->
+    <Label layoutX="400.0" layoutY="380.0" text="Set Priority/Reminder:" />
+    <ChoiceBox fx:id="priorityDropdown" layoutX="540.0" layoutY="375.0" prefWidth="150.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="High" />
+                <String fx:value="Medium" />
+                <String fx:value="Low" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <DatePicker fx:id="deadlinePicker" layoutX="700.0" layoutY="375.0" prefWidth="180.0" />
+
+    <!-- Save Prioritization Button -->
+    <Button fx:id="savePrioritizationButton" layoutX="20.0" layoutY="430.0" onAction="#savePrioritizationOnAction" text="Save Prioritization" />
+
+    <!-- Return Home & Log Out Buttons -->
+    <Button fx:id="returnHomeButton" layoutX="646.0" layoutY="20.0" onAction="#returnHomeOnAction" text="Return Home" />
+    <Button fx:id="logoutButton" layoutX="790.0" layoutY="20.0" onAction="#logoutOnAction" text="Log Out" />
+
+</AnchorPane>
