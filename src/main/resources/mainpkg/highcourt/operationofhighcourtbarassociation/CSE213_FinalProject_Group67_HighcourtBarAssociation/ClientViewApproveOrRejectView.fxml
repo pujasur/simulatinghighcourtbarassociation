@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="850" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group67.oop.CSE213_FinalProject_Group67_HighcourtBarAssociation.ClientViewApproveorRejectViewController">
+
+    <!-- Title Label -->
+    <Label layoutX="240" layoutY="20" text="Legal Document Review ">
+        <font>
+            <Font name="Arial Bold" size="24" />
+        </font>
+    </Label>
+
+    <!-- Case Selection -->
+    <Label layoutX="50" layoutY="80" text="Select Case:" />
+    <ComboBox fx:id="caseComboBox" layoutX="220" layoutY="75" prefWidth="250" />
+
+    <!-- Legal Documents Button -->
+    <Button fx:id="viewDocumentsButton" layoutX="500" layoutY="75" onAction="#handleViewDocuments" text="View Legal Documents" />
+
+    <!-- Document List -->
+    <Label layoutX="50" layoutY="130" text="Available Documents:" />
+    <ListView fx:id="documentListView" layoutX="220" layoutY="130" prefHeight="120" prefWidth="400" />
+
+    <!-- Document Preview Section -->
+    <Label layoutX="50" layoutY="270" text="Document Preview &amp; Metadata:" />
+    <TextArea fx:id="documentPreviewArea" editable="false" layoutX="50" layoutY="300" prefHeight="120" prefWidth="750" wrapText="true" />
+
+    <!-- Approve/Reject Options -->
+    <Label layoutX="50" layoutY="440" text="Your Response:" />
+    <RadioButton fx:id="approveRadio" layoutX="220" layoutY="435" text="Approve" />
+    <RadioButton fx:id="rejectRadio" layoutX="320" layoutY="435" text="Reject" />
+
+    <!-- Rejection Comment Box -->
+    <Label layoutX="50" layoutY="480" text="If Rejected, Please Provide Reason:" />
+    <TextArea fx:id="rejectionReasonArea" layoutX="240.0" layoutY="469.0" prefHeight="40" prefWidth="400" wrapText="true" />
+
+    <!-- Action Buttons -->
+    <Button fx:id="submitDecisionButton" layoutX="220" layoutY="530" onAction="#handleSubmitDecision" prefWidth="150" text="Submit Decision" />
+    <Button fx:id="returnHomeButton" layoutX="650.0" layoutY="21.0" onAction="#handleReturnHome" prefHeight="31.0" prefWidth="110.0" text="Return Home" />
+    <Button fx:id="logoutButton" layoutX="765.0" layoutY="21.0" onAction="#handleLogout" prefHeight="31.0" prefWidth="78.0" text="Log Out" />
+
+</AnchorPane>

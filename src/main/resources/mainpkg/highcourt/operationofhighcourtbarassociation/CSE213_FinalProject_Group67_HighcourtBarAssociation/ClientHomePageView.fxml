@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="834.0" prefWidth="1217.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group67.oop.CSE213_FinalProject_Group67_HighcourtBarAssociation.ClientHomePageViewController">
+   <left>
+      <VBox prefHeight="612.0" prefWidth="271.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RequestLegalAssistanceOnAction" prefHeight="31.0" prefWidth="273.0" text="Request Legal Assistance">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#TrackCaseStatusOnAction" prefHeight="31.0" prefWidth="280.0" text="Track Case Status">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#CaseUpdateNotificationsOnAction" prefHeight="31.0" prefWidth="270.0" text=" Case Update Notifications">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#UpdateDocumentsOnAction" prefHeight="31.0" prefWidth="275.0" text=" Upload Documents ">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ApproveorrejectlegaldocumentsOnAction" prefHeight="31.0" prefWidth="276.0" text="Approve or reject legal documents">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#PaylegalFeesOnAction" prefHeight="31.0" prefWidth="274.0" text=" Pay legal fees">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ProvidefeedbackAdvocatePerfomanceOnAction" prefHeight="31.0" prefWidth="275.0" text="Provide feedback (AdvocatePerfomance)">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DownloadcaserelatedreportsOnAction" prefHeight="31.0" prefWidth="269.0" text=" Download case-related reports">
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LogOutOnAction" prefHeight="31.0" prefWidth="283.0" text="Log Out">
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <Label text="Client Home Page" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e4dede" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </top>
+</BorderPane>
